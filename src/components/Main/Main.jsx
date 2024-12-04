@@ -13,7 +13,7 @@ const Main = () => {
             {/* Nav area  */}
             <div className="nav">
                 <p>Gemini</p>
-                <img src={assets.user_icon} alt="" />
+                <img src={assets.sachin} alt="" />
             </div>
 
             {/* Main area */}
@@ -48,7 +48,7 @@ const Main = () => {
                 </div>
                     </> : <div className="result">
                         <div className="result-title">
-                            <img src={assets.user_icon} alt="" />
+                            <img src={assets.sachin} alt="" />
                             <p>{recentPrompt}</p>
                         </div>
                         <div className="result-data">
@@ -73,7 +73,7 @@ const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
-                            <img onClick={() => onSent()} src={assets.send_icon} alt="" />
+                           {input?<img onClick={() => onSent()} src={assets.send_icon} alt="" />:null} 
                         </div>
                     </div>
                     <p className="bottom-info">Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps</p>
